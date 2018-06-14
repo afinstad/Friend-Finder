@@ -2,30 +2,36 @@
     <meta charset="UTF-8">
     <title>FriendFinder</title>
   
-    <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
-    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   
   </head>
   <body>
 
   <div class="container">
 
-    <h2>Survey Questions</h2>
+    <h1>Survey Questions</h1>
     <hr>
 
     <h3><strong>About You</strong></h3>
     <h4>Name</h4>
+    <input type="text" name="" id="name" class="form-control" required>
+   
+    <h3><strong>About You</strong></h3>
+    <h4>Link to Photo Image</h4>
     <input type="text" name="" id="photo" class="form-control" required>
-
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>I love dogs</h4>
+    <h4><strong>Question 1</strong></h4>
+    <h3>I love dogs</h3>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -34,8 +40,8 @@
         <option value="4">4</option>
         <option value="5">5 (Strongly Agree)</option>
      </select>
-     <h3><strong>Question 2</strong></h3>
-     <h4>Keeping up on current events is important to me</h4>
+     <h4><strong>Question 2</strong></h4>
+     <h3>Keeping up on current events is important to me</h3>
      <select data-placeholder="" class="chosen-select" id="q2">
          <option value=""></option>
          <option value="1">1 (Strongly Disagree)</option>
@@ -44,8 +50,8 @@
          <option value="4">4</option>
          <option value="5">5 (Strongly Agree)</option>
       </select>
-      <h3><strong>Question 3</strong></h3>
-      <h4>It's okay to order pizza two nights in a row</h4>
+      <h4><strong>Question 3</strong></h4>
+      <h3>It's okay to order pizza two nights in a row</h3>
       <select data-placeholder="" class="chosen-select" id="q3">
           <option value=""></option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -54,8 +60,8 @@
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
        </select>
-       <h3><strong>Question 4</strong></h3>
-       <h4>I love to travel</h4>
+       <h4><strong>Question 4</strong></h4>
+       <h3>I could go backpacking for week</h3>
        <select data-placeholder="" class="chosen-select" id="q4">
            <option value=""></option>
            <option value="1">1 (Strongly Disagree)</option>
@@ -64,8 +70,8 @@
            <option value="4">4</option>
            <option value="5">5 (Strongly Agree)</option>
         </select>
-        <h3><strong>Question 5</strong></h3>
-        <h4>It's a Saturday. Thoughts on brewery hopping?</h4>
+        <h4><strong>Question 5</strong></h4>
+        <h3>It's a Saturday. Thoughts on brewery hopping?</h3>
         <select data-placeholder="" class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -74,8 +80,8 @@
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
          </select>
-         <h3><strong>Question 6</strong></h3>
-         <h4></h4>
+         <h4><strong>Question 6</strong></h4>
+         <h3>Being around people energizes me</h3>
          <select data-placeholder="" class="chosen-select" id="q6">
              <option value=""></option>
              <option value="1">1 (Strongly Disagree)</option>
@@ -84,8 +90,8 @@
              <option value="4">4</option>
              <option value="5">5 (Strongly Agree)</option>
           </select>
-          <h3><strong>Question 7</strong></h3>
-          <h4>Insert Question</h4>
+          <h4><strong>Question 7</strong></h4>
+          <h3>I enjoy day-dreaming</h3>
           <select data-placeholder="" class="chosen-select" id="q7">
               <option value=""></option>
               <option value="1">1 (Strongly Disagree)</option>
@@ -94,8 +100,8 @@
               <option value="4">4</option>
               <option value="5">5 (Strongly Agree)</option>
            </select>
-           <h3><strong>Question 8</strong></h3>
-           <h4>Insert Question</h4>
+           <h4><strong>Question 8</strong></h4>
+           <h3>Chipotle is over-rated</h3>
            <select data-placeholder="" class="chosen-select" id="q8">
                <option value=""></option>
                <option value="1">1 (Strongly Disagree)</option>
@@ -104,8 +110,8 @@
                <option value="4">4</option>
                <option value="5">5 (Strongly Agree)</option>
             </select>
-            <h3><strong>Question 9</strong></h3>
-            <h4></h4>
+            <h4><strong>Question 9</strong></h4>
+            <h3>I'd climb a cool tree if I saw one</h3>
             <select data-placeholder="" class="chosen-select" id="q9">
                 <option value=""></option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -114,8 +120,8 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
              </select>
-             <h3><strong>Question 10</strong></h3>
-             <h4>Insert Question</h4>
+             <h4><strong>Question 10</strong></h4>
+             <h3>I'm a wonderlust</h3>
              <select data-placeholder="" class="chosen-select" id="q10">
                  <option value=""></option>
                  <option value="1">1 (Strongly Disagree)</option>
@@ -124,7 +130,8 @@
                  <option value="4">4</option>
                  <option value="5">5 (Strongly Agree)</option>
               </select>
-
+              
+              <button type="submit" class="btn btn-primary btn-lg" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
   
       <footer class="footer">
         <div class="container">
@@ -133,34 +140,33 @@
       </footer>
   
     </div>
-  <!-- Modal -->
-  <div class="modal-content">
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+     <!-- Modal -->
+<div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+ <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="data:image/jpeg;base64,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" alt="">
           </div>
-          <div class="modal-body">
-              <h2 id="matchName"></h2>
-              <img id="matchImg" src="" alt="">
-            </div>
-            <div class="model-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+          <div class="model-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
-    </div>
 
-        <script type="text/javascript"></script>
-  
-
+      </div>
+  </div>
 
 
 
 
 
   </body>
-  
 </span>
 </body>
+<script type="text/javascript"></script>
 <script src="assets/javascript/home.js"></script>
 </html>

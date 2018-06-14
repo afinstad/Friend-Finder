@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 25px;
+    
+  }
+
+h1 {
+    text-align: center;
+    font-size:30px;
+    font-family: 'Pacifico', cursive;
+}
+
+#btn { 
+    position: center;
+}
+
+body {
+    background-color: peachpuff
+}
+
+.jumbotron {
+    color: navy
+}
+
+.btn-primary {
+    color: white
+}
