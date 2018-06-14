@@ -1,0 +1,166 @@
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+  
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+
+  <div class="container">
+
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3><strong>About You</strong></h3>
+    <h4>Name</h4>
+    <input type="text" name="" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>I love dogs</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+     </select>
+     <h3><strong>Question 2</strong></h3>
+     <h4>Keeping up on current events is important to me</h4>
+     <select data-placeholder="" class="chosen-select" id="q2">
+         <option value=""></option>
+         <option value="1">1 (Strongly Disagree)</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5 (Strongly Agree)</option>
+      </select>
+      <h3><strong>Question 3</strong></h3>
+      <h4>It's okay to order pizza two nights in a row</h4>
+      <select data-placeholder="" class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+       </select>
+       <h3><strong>Question 4</strong></h3>
+       <h4>I love to travel</h4>
+       <select data-placeholder="" class="chosen-select" id="q4">
+           <option value=""></option>
+           <option value="1">1 (Strongly Disagree)</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>It's a Saturday. Thoughts on brewery hopping?</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+         <h3><strong>Question 6</strong></h3>
+         <h4></h4>
+         <select data-placeholder="" class="chosen-select" id="q6">
+             <option value=""></option>
+             <option value="1">1 (Strongly Disagree)</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 7</strong></h3>
+          <h4>Insert Question</h4>
+          <select data-placeholder="" class="chosen-select" id="q7">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+           </select>
+           <h3><strong>Question 8</strong></h3>
+           <h4>Insert Question</h4>
+           <select data-placeholder="" class="chosen-select" id="q8">
+               <option value=""></option>
+               <option value="1">1 (Strongly Disagree)</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3><strong>Question 9</strong></h3>
+            <h4></h4>
+            <select data-placeholder="" class="chosen-select" id="q9">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+             </select>
+             <h3><strong>Question 10</strong></h3>
+             <h4>Insert Question</h4>
+             <select data-placeholder="" class="chosen-select" id="q10">
+                 <option value=""></option>
+                 <option value="1">1 (Strongly Disagree)</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5 (Strongly Agree)</option>
+              </select>
+
+  
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afinstad/Friend-Finder">GitHub Repo</a></p>
+        </div>
+      </footer>
+  
+    </div>
+  <!-- Modal -->
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+              <h2 id="matchName"></h2>
+              <img id="matchImg" src="" alt="">
+            </div>
+            <div class="model-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <script type="text/javascript"></script>
+  
+
+
+
+
+
+
+  </body>
+  
+</span>
+</body>
+<script src="assets/javascript/home.js"></script>
+</html>
